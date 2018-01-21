@@ -17,5 +17,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://r05al.github.io/dist-calc"
+  "homepage": "https://r05al.github.io/ip-dist-calc"
 }
