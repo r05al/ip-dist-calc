@@ -1,28 +1,159 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: #FFF;
+  position: relative;
+  margin: .5em;
+  margin-bottom: 9em;
   padding: 20px;
-  color: white;
+  color: rgb(109,37,250);
 }
 
 .App-title {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+}
+
+.App-title-results {
+  font-weight: bold;
   font-size: 1.5em;
+  text-align: center;
+  padding: 1em 2em;
+  padding-top: 0;
 }
 
-.App-intro {
-  font-size: large;
+.underline {
+  width: 100%;
+  border-bottom: 1px #ECECEE solid;
+  margin: 0 auto 2em;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+small {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+span {
+  display: block;
+  line-height: 1.5em;
+}
+
+span:first-child {
+  font-weight: bold;
+}
+
+input {
+  width: 96%;
+  font-size: 1em;
+  height: 2em;
+  border-color: #ECECEE;
+  border-style: solid;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  padding: 0.25em;
+}
+
+.invalid {
+  border-color: red;
+}
+
+.address {
+  font-size: 1.25em;
+  padding: 1.5em;
+  padding-top: 1em;
+  color: #000;
+}
+
+.back-btn {
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  color: #FFF;
+  border-radius: 4px;
+  background-color: rgb(109,37,250);
+  height: 2.5em;
+  width: 4.5em;
+}
+
+.comment {
+  color: #7B7B85;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.submit-btn, .sub-header {
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.sub-header {
+  bottom: -6.5em;
+}
+
+.sub-h1 {
+  margin-bottom: 0.25em;
+}
+
+.submit-btn {
+  font-size: 1.5em;
+  bottom: -5em;
+  height: 3.5em;
+  width: 12em;
+  color: #FFF;
+  border-radius: 10px;
+  background-color: rgb(109,37,250);
+}
+
+@media screen and (min-width:46.0625em) {
+  .App-header {
+    margin: 2.5em 4em;
+    padding: 4em 8em;
+  }
+
+  .App-title {
+    padding-top: 0;
+    
+  }
+
+  .App-title-results {
+    font-size: 2em;
+  }
+
+  .address {
+    padding: 0.5em;
+    padding-top: 0.25em;
+  }
+
+  .back-btn {
+    top: 1.5em;
+    left: 1.25em;
+  }
+
+  .location {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .submit-btn {
+    height: 3em;
+    width: 14em;
+  }
+
+  .underline {
+    width: 18em;
+  }
+
+  label {
+    display: inline-block;
+    width: 46%;
+    margin: 0 2%;
+  }
+
+  label > small {
+    display: block;
+  }
 }
